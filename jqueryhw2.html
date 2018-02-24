@@ -2,7 +2,6 @@
 <html>
 
   <head>
-
       <title>Draggable Puzzle</title>
       <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
       <style>
@@ -14,41 +13,34 @@
           top: 0;
           left: 0;
       }
-
-
-
       </style>
 
       <!-- Link to both jQuery and jQuery UI -->
-
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-
+      <!-- jQuery method calls -->
       <script>
           $(document).ready(function(){
-              $( "#menu" ).menu();
+              $("#menu").menu();
 
               $(function() {
-               $( ".moveit" ).draggable();
+               $(".moveit").draggable();
              });
-
-
-
-            });  /* end document.ready */
-
+            }); 
       </script>
   </head>
 
   <body>
+    
+    <!-- set up puzzle interface -->
     <h1 align = "CENTER">Finish the Puzzle!</h1>
     <h3 align = "CENTER"> Drag the pieces into place.</h3>
-
+    
+     <!-- actually getting and moving the puzzle pieces -->
     <div class="puzz">
       <img src="jigsaw/puzz.png" style="position: absolute; top:200px; left: 750px;">
     </div>
-
 
     <div class="moveit">
       <img  class="p1" src="jigsaw/piece1.png" style="position: absolute; top:430px; left: 350px;" width="400" height="350">
@@ -74,7 +66,6 @@
         <img  class="p6" src="jigsaw/piece6.png" style="position: absolute; top:430px; left: 100px;">
         </div>
 
-
       <div class="moveit">
         <img  class="p7" src="jigsaw/piece7.png" style="position: absolute; top:430px; left: 100px;">
         </div>
@@ -99,6 +90,7 @@
         <img  class="p12" src="jigsaw/piece12.png" style="position: absolute; top:430px; left: 100px;">
         </div>
 
+         <!-- the basic menu -->
         <div>
         <ul id="menu">
                 <li><a href="http://i6.cims.nyu.edu/~ef1389/" target="_blank">Home</a></li>
