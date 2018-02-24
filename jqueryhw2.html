@@ -1,0 +1,129 @@
+<DOCTYPE html>
+<html>
+
+  <head>
+
+      <title>Draggable Puzzle</title>
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <style>
+
+      div{
+          height:100px;
+          width:100px;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }
+
+
+
+      </style>
+
+      <!-- Link to both jQuery and jQuery UI -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+      <script>
+          $(document).ready(function(){
+              $( "#menu" ).menu();
+
+              $(function() {
+               $( ".moveit" ).draggable();
+             });
+
+
+
+            });  /* end document.ready */
+
+      </script>
+  </head>
+
+  <body>
+    <h1 align = "CENTER">Finish the Puzzle!</h1>
+    <h3 align = "CENTER"> Drag the pieces into place.</h3>
+
+    <div class="puzz">
+      <img src="jigsaw/puzz.png" style="position: absolute; top:200px; left: 750px;">
+    </div>
+
+
+    <div class="moveit">
+      <img  class="p1" src="jigsaw/piece1.png" style="position: absolute; top:430px; left: 350px;" width="400" height="350">
+      </div>
+
+    <div class="moveit">
+      <img  class="p2" src="jigsaw/piece2.png" style="position: absolute; top:20px; left: 100px;">
+      </div>
+
+      <div class="moveit">
+        <img  class="p3" src="jigsaw/piece3.png" style="position: absolute; top:120px; left: 100px;">
+        </div>
+
+      <div class="moveit">
+        <img  class="p4" src="jigsaw/piece4.png" style="position: absolute; top:300px; left: 100px;">
+        </div>
+
+      <div class="moveit">
+        <img  class="p5" src="jigsaw/piece5.png" style="position: absolute; top:75px; left: 100px;" width="370" height="475" >
+        </div>
+
+      <div class="moveit">
+        <img  class="p6" src="jigsaw/piece6.png" style="position: absolute; top:430px; left: 100px;">
+        </div>
+
+
+      <div class="moveit">
+        <img  class="p7" src="jigsaw/piece7.png" style="position: absolute; top:430px; left: 100px;">
+        </div>
+
+      <div class="moveit">
+        <img  class="p8" src="jigsaw/piece8.png" style="position: absolute; top:430px; left: 100px;">
+        </div>
+
+      <div class="moveit">
+        <img  class="p9" src="jigsaw/piece9.png" style="position: absolute; top:430px; left: 100px;">
+        </div>
+
+      <div class="moveit">
+        <img  class="p10" src="jigsaw/piece10.png" style="position: absolute; top:430px; left: 100px;">
+        </div>
+
+      <div class="moveit">
+        <img  class="p11" src="jigsaw/piece11.png" style="position: absolute; top:430px; left: 100px;" height="332">
+        </div>
+
+      <div class="moveit">
+        <img  class="p12" src="jigsaw/piece12.png" style="position: absolute; top:430px; left: 100px;">
+        </div>
+
+        <div>
+        <ul id="menu">
+                <li><a href="http://i6.cims.nyu.edu/~ef1389/" target="_blank">Home</a></li>
+                <li>Games
+                  <ul>
+                    <li><a href="jqueryhw1.html" target="_blank">Puzzle with Buttons</a></li>
+                    <li><a href="jqueryhw2.html" target="_blank">Draggable Puzzle</a> </li>
+                  </ul>
+                </li>
+                <li>NYU
+                  <ul>
+                    <li>Class Resources
+                      <ul>
+                        <li><a href="http://cs.nyu.edu" target="_blank">Comp Sci Dept</a></li>
+                        <li><a href="http://cs.nyu.edu/courses/spring17/CSCI-UA.0004-003/" target="_blank">Class Site</a></li>
+                        <li><a href="http://cims.nyu.edu" target="_blank">CIMS</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+
+  </body>
+
+  </html>
+</DOCTYPE>
